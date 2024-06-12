@@ -1,0 +1,105 @@
+/* Set the background color of the entire page to black */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    /* Set text color to white for better readability */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the container */
+.auth-container {
+    width: 400px;
+    /* Set width */
+    height: 400px;
+    /* Set height to make it square */
+    padding: 20px;
+    border: 1px solid #ffffff;
+    /* White border for contrast */
+    border-radius: 5px;
+    background-color: #009688;
+    /* New background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the width and height */
+    animation: colorChange 5s infinite alternate;
+    /* Apply animation */
+}
+
+/* Animation for the auth container */
+@keyframes colorChange {
+    0% {
+        background-color: #009688;
+        /* Initial color */
+    }
+
+    50% {
+        background-color: #007bff;
+        /* Intermediate color */
+    }
+
+    100% {
+        background-color: #8a2be2;
+        /* Final color */
+    }
+}
+
+/* Style the header */
+.auth-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+    /* Set text color to white */
+}
+
+/* Style the form */
+form {
+    width: 90%;
+    /* Ensure the form takes the full width of the container */
+}
+
+/* Style the form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Style the labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    /* Set text color to white */
+}
+
+/* Style the input fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the button */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #ffffff;
+    /* Set text color to white */
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+.btn:hover {
+    background-color: #0056b3;
+}
